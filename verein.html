@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DCI Musik player e.V.</title>
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+
+    <style>
+        body{
+            font-family: 'Poppins', sans-serif;
+        }
+
+    @media (min-width: 587px) and (max-width: 3000px)  
+    {
+            .nav{
+                display: flex;
+                justify-content: right;
+                align-items: center;
+                background-color: #5469FA;
+                flex: 1;
+                padding: 5px;
+
+            }
+            .bild{
+                   background-color: #EEFAF0;
+            }
+            .flex nav{
+            margin: 5px;
+            color: white;
+            text-decoration: none;
+            display: flex;
+            font-weight: bolder;
+            justify-content: center;
+            align-items: right;
+            
+            
+            }
+            .flex .logo{
+                display: flex;
+                flex: 2;
+                align-items: center;
+                justify-content: left;
+                
+                
+            }
+            body{
+                background-color: #EEFAF0;
+                
+            } 
+
+            .nav a{
+                color: white;
+                text-decoration: none;
+                font-size: 22px;
+                font-weight: 28PX;
+                background-color: black;
+                border-radius: 10px 2px;
+                
+        
+                
+            } 
+            .a:hover{
+                color: black;
+                background-color: white;
+            }
+
+            .logo title{
+                display: flex;
+                font-size: 20px;
+                flex: 2;
+                align-items: flex-start;
+                justify-content: center;
+                margin-block-end:  50px;
+                 
+            }
+
+            .kontakt{
+                font-size: 16px;
+            }
+
+            .flex div{
+                flex: 1;
+                background-color: black;
+                color: white;
+            
+            }
+            .head{
+                display: flex;
+                padding-top: 2px;
+                margin-top: 20px;
+                margin: 30px;
+                
+            }
+            .divnav{
+                padding-left: 25px;
+            }
+            .pface{
+                color: white;
+                background-color: #5469FA;
+                display: flex;
+                flex: 1;
+                align-items: center;
+                justify-content: center;
+                margin-right: 2px;
+                padding-left: 20px;
+                margin: 20px;
+                text-decoration: none;
+                padding-right: 20px;
+                text-align: center;
+                font-size: 16px;
+                
+            }
+            .musicp{
+                text-align: center;
+                font-size: 20px;
+                font-weight: 15px;
+                padding-bottom: 20px;
+                background-color: black;
+                color: white;
+                padding: 1px;
+                
+               
+                 
+            }
+            .flex-container{
+                display: flex;
+                align-items: center;
+                background-color: white;
+                font-size: 28px;
+                font-weight: bolder;
+                text-align: center;
+                       
+            }
+
+            .box1{
+                flex: 2;
+                height: 400px;
+                background-color: #DEF0FF;
+
+                
+            }
+
+            .box1:hover:hover{
+                color: white;
+                background-color: #B553B7;
+            }
+
+            .box2{
+                flex: 1;
+                height: 400px;
+                background-color: #4796C7;
+                color: white;
+                
+            }
+
+            .box2:hover:hover:hover:hover{
+                color: white;
+                background-color: #B553B7;
+            }
+
+            .box3{
+                flex: 1;
+                height: 400px;
+                background-color: #5469FA; 
+                color: white;
+              
+            }
+
+            .box3:hover:hover:hover:hover:hover:hover:hover:hover{
+                color: white;
+                background-color: #B553B7;
+            }
+
+            .box4{
+                flex: 1;
+                height: 400px;
+                background-color: #5034E6;
+                color: white;
+                
+            }
+
+            .box4:hover:hover:hover:hover{
+                color: white;
+                background-color: #B553B7;
+            }
+
+            .div-angebot{
+                font-size: 18px;
+            }
+
+            .tabform{
+                display: flex;
+            }
+
+            .table{
+
+                display: flex;
+                flex: 2;
+                align-items: center;
+                justify-content: center;
+                
+                padding: inherit;
+                background-color: black;
+                color: white;
+                margin-bottom: 150px;
+            }
+
+            .tab-form{
+                display: flex;
+                text-align: center;
+                background-color:#5469FA;
+                color: white;
+                padding-top: 10px;
+                padding-bottom: 30px;
+                padding-right: 20px;
+               
+                
+                flex: 1;
+               
+
+                
+                
+            }
+
+            .form-body{
+                background-color:  #DEF0FF;
+                
+            }
+
+            .tab{
+
+                margin: 20px;
+                padding: 5px;
+                width: 50%;
+                border: 2px solid black ;  
+                background-color: white;
+                    
+
+            }
+
+            .th{
+
+                background-color: #5034E6; 
+                color: wheat;
+                font-size: 20px;
+                width: 2%;
+               
+            }
+
+            .tr{
+                width: 2%;
+                border: 1px solid black ; 
+            }
+
+            td{
+                background-color: white;
+                color: black;
+                width: 2%;
+                text-align: center;
+                border: 1px solid black ; 
+                
+            }
+
+            .td-name{
+
+                font-size: 16px;
+                background-color: black;
+                color: white;
+                width: 2%;
+                font-weight: bold;
+
+            }
+
+            .td-name:hover{
+
+                background-color: #B553B7;
+                color: white;
+
+            }
+
+            .td-prozent{
+                background-color: darkgreen;
+                color: white;
+                
+               
+            }
+
+            .form{
+
+                display: flex;
+                flex: 1;
+                align-items: center;
+                flex-direction: wrap;
+                justify-content: space-evenly;
+                align-items: center;
+
+            }
+
+            .input{
+               margin: 2px;
+               padding: 0px 5px;
+                
+            }
+
+            .button{
+                background-color: black;
+                color: white;
+                padding-top: 2px;
+                padding: 0px 1px;
+                padding-bottom: 1px;
+                text-decoration: solid white;
+                font-size: 18px;
+                height: 32px;
+                width: 100px;
+                border-radius: 25px;
+                margin-top: 25px;
+                margin-bottom: 2px;
+                
+            }
+
+            .button:hover{
+                background-color: #B553B7;
+                color: white;
+            }
+
+            .h4{
+                display: flex;
+                flex: 1;
+                text-align: center;
+                background-color: black;
+                color: white;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-right: 02px;
+                padding-left: 60px;
+                flex: 1;
+                
+            }
+
+            .h3{
+                background-color: black;
+                color: white;
+                text-align: center;
+                font-size: 22px;
+                font-weight: bolder;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-right: 02px;
+                padding-left: 70px;
+                  
+            }
+            
+            .table-bacground{
+                display: flex;
+                
+                flex-direction: row-reverse;
+                flex: 1;
+                align-content: center;
+                
+                text-align: center;
+
+                background-color: white;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-right: 25px;
+                padding-left: 5px;
+                
+            } 
+            .flex-img{
+                display: flex;
+                flex: 1;
+                padding: 0 06;
+                width: 50%;
+                padding-top: 10px;
+        
+            } 
+            .clearfix-byoung{
+                display: table;
+                content: "" ;
+                align-content: flex-end;
+                margin: 450px;
+
+            }
+
+            .clearfix-tayc{
+                display: table;
+                content: "" ;
+                padding-left: 10px;
+               
+            }
+
+            .image{
+                position: relative;
+                width: 420px;
+            }
+
+            .footer{
+            
+            padding: 50px;
+            color: white;
+            background-color: black;
+            text-decoration: none;
+            display: flex;
+            font-weight: bolder;
+            justify-content: center;
+            align-items: right;
+            justify-content: space-evenly;
+            font-weight: bold;
+                
+            }
+
+            .footer-a{
+
+                text-decoration: none;
+                color: white;
+                
+
+            }
+
+            .featuring{
+            
+            margin-bottom: -10px;
+            margin-top: -2px;
+
+            }
+            
+
+           
+    }
+            
+        
+    </style>
+</head>
+    <body class="body">
+        <div class="flex .logo">
+                <div class="flex div">
+                    
+                 
+                    
+                </div>
+                <div class="logo title">
+                    <img class="head" src="play.png" width="80" height="80" alt="müll logo"> 
+                    
+                    <h1 class="logo title" >DCI music player e.V.</h1>
+                    <h1 class="kontakt"> KONTAKT: +49 001 002 003 004</h1>
+                    
+                    <p>
+                    
+                        <a class="pface" href="https://www.w3schools.com/html/default.asp" >facebook</a>
+                        
+                    </p>
+                    
+                </div>
+            
+        </div >
+            <div class="flex nav">
+                    <nav>
+                        <a class="nav a" href="#">HOME</a>
+                    </nav>
+                    <nav >
+                        <a  class="nav a" href="#">ÜBER UNS</a>
+                    </nav>
+                    <nav >
+                        <a  class="nav a" href="#">BILDER</a>
+                    </nav>
+                    <nav>
+                        <a  class="nav a" href="#">KONTAKT</a>
+                    </nav>
+            </div>
+            <div class="musicp">
+                <img src="karolina3.png" width="1503" height="450"  alt="Das bild">
+            </div>
+
+
+            <div class="musicp">
+                <p> Musik und Künst als verbindende Elemente zwischen verschiedenen Kulturen </p>
+                <h1>Unsere angebote:</h1>
+            </div>
+
+        <div class="flex-container" >
+            <div class="box1">KONZERT
+
+                <iframe width="603" height="358" src="https://www.youtube.com/embed/8yCp-qtUrI8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            </div>
+            <div class="box2" >MUSIKUNTERRICHT
+                <div class="div-angebot" >
+                    
+                    <img src="gitarre2.jpg" width="300" height="358" alt="gitarre lessons">
+                    
+                </div>
+            </div>
+            <div class="box3" >PROJEKT
+
+                <div class="div-angebot" >
+                    
+                    <img src="projekt2.jpg" width="300" height="358" alt="projekt lessons">
+                    
+                </div>
+
+            </div>
+
+            <div class="box4" >KUNSTLERVERMITTLUNG
+
+                
+                    
+                    <img src="kunstler2.jpg" width="300" height="358" alt="kunstler2 lessons">
+
+            </div>
+
+
+        </div>
+    
+    <div>
+
+        <div>
+
+            <div class="h4" >
+                <h4> Die Anmeldungen erfolgen in diesem Jahr ausschließlich online in der Zeit vom 31 . 12. - 04 . 02 . 2022.
+                    Bitte beachten Sie auch die Hinweise zur Anmeldung unterhalb des Formulars.  </h4>
+            </div>
+
+            <div  class="tab-form"  >
+
+                <form class="form" >
+                        <div class="input"  >
+                            <label for="text">Name</label>
+                            <input type="text" placeholder="Name" />
+                        </div>
+
+                        <div class="input"  >
+                            <label for="text">Beruf</label>
+                            <input type="text" placeholder="Beruf" />
+                        </div>
+
+                        <div >
+                            <label for="text">Musik genre </label>
+                            <input type="text" id="text" />
+                        </div>
+
+                        <div class="input"  >
+                            <label for="number">Alter</label>
+                            <input type="number" id="number" />
+                        </div>
+
+                        
+
+                        <div class="input"  >
+                            <label for="email"> E-mail </label>
+                            <input type="email" id="email" />
+                        </div>
+
+                        <div class="input"  >
+                            <label for="Password"> Password </label>
+                            <input type="password" id= "password" />
+                        </div>
+
+                        <div class="input" >
+                            <button class="button" > Erstellen </button>
+                        </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+        <div>
+
+            <div class="h3">
+                <h3 > BEKANNTE KÜNSTLER  </h3>
+            </div>
+
+            <div class="table-bacground"  >
+
+                <div class="container" > 
+
+                    <div class="flex-img"  >
+                        <div class="clearfix-img">
+                            <di>
+                                <iframe width="420" height="250" src="https://www.youtube.com/embed/2JiqIeXdKWA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <h3 class="featuring" > DANAKIL</h3> 
+                                <p>Frankreich</p>
+                            </di>
+                            
+                        </div>
+
+                        <div class="clearfix-tayc">
+                            <div>
+                                <img src="fally-ipupa.jpg" width="420" height="250"  alt="fally-ipupa">
+                                <h3 class="featuring"> Fally-ipupa </h3>  
+                                <p>Kongo</p>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+
+                <table class="tab" >
+                    
+                    <tr class="tr"  >
+                        <th class="th"  >NAME</th>
+                        <th class="th"   >LAND</th>
+                        <th class="th"    >GENRE</th>
+                        <th class="th"   >ZIEL</th>
+                    </tr>
+
+                    <tr class="tr">
+                        <td class="td-name"   >DANAKIL</td>
+                        <td>Frankreich</td>
+                        <td>Reggae</td>
+                        <td class="td-prozent" >100 % </td>
+                    </tr>
+
+                    <tr class="tr">
+                        <td class="td-name"   >B Young</td>
+                        <td>USA</td>
+                        <td>R'nb</td>
+                        <td>80 % </td>
+                    </tr>
+
+                    <tr class="tr">
+                        <td class="td-name"    >fally-ipupa</td>
+                        <td>Kongo</td>
+                        <td>Afro-beat</td>
+                        <td>55 % </td>
+                    </tr>
+
+                    <tr class="tr">
+                        <td class="td-name"   >Christiano</td>
+                        <td>Brazil</td>
+                        <td>Salsa</td>
+                        <td>45 % </td>
+                    </tr>
+
+                    <tr class="tr">
+                        <td class="td-name"   >Tayc</td>
+                        <td>France</td>
+                        <td>R'nb</td>
+                        <td>30 % </td>
+                    </tr>
+
+                    <tr class="tr">
+                        <td class="td-name"   >Dadu</td>
+                        <td>Kongo</td>
+                        <td>Afro-beat</td>
+                        <td>15 % </td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div>
+            <footer class="footer" >
+                <na >
+                    <a class="footer-a"  href="https://www.w3schools.com/html/default.asp"  >Cookies</a>
+                   
+                </na>
+
+                <nav>
+                    <a  na class="footer-a"  href="https://www.w3schools.com/html/default.asp" >Kontakt</a>
+                </nav>
+
+                <nav>
+                    <a na class="footer-a"  href="https://www.w3schools.com/html/default.asp" >Datenschutz</a>
+                </nav>
+
+                <nav>
+                    <a na class="footer-a"  href="https://www.w3schools.com/html/default.asp" >Impressum</a>
+                </nav>
+
+               
+
+            </footer>
+
+           
+        </div>
+    </div>
+            
+</body>
+</html>
